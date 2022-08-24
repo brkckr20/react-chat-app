@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* navigation-bar */
+#navigation {
+  width: 100px;
+  height: 100%;
+  border-right: 1px solid #ebebeb;
+}
+
+
+.nav-logo {
+  padding: 15px 0;
+  height: 96px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.nav-list-item {
+  padding: 15px 0;
+}
+
+.nav-list-item span {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.archived {
+  flex: 1;
+}
