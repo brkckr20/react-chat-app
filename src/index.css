@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
 /* navigation-bar */
 #navigation {
   width: 100px;
@@ -31,6 +35,12 @@ code {
   padding: 15px 0;
 }
 
+.nav-list-item a {
+  padding: 12px 22px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+}
+
 .nav-list-item span {
   width: 8px;
   height: 8px;
@@ -40,4 +50,50 @@ code {
 
 .archived {
   flex: 1;
+}
+
+
+.sidebar-group>div {
+  width: 350px;
+  height: 100%;
+  border-right: 1px solid #ebebeb;
+}
+
+.sidebar-group-header {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  justify-content: space-between;
+  height: 80px;
+  line-height: 40px;
+}
+
+.sidebar-group-header>h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.sidebar-group-header span {
+  padding: 6px 14px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.sidebar-group-header span:nth-child(2) {
+  margin-left: 0.5rem;
+}
+
+.sidebar-group-input {
+  padding: 17px 30px;
+}
+
+.sidebar-group-input input {
+  width: 290px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  line-height: 1.5;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  outline-color: #0a80ff;
+  outline-width: 1px;
+  font-size: 14px;
 }

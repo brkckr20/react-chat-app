@@ -12,18 +12,20 @@ const Navigation = () => {
                     <BsChatText size={30} fill={"#0a80ff"} />
                 </li>
                 <li className="nav-list-item text-center position-relative">
-                    <BsChat size={14} fill={"#0a80ff"} />
-                    <span style={{ backgroundColor: "#ffb822" }}></span>
+                    <a href="!#">
+                        <BsChat size={14} fill={"#0a80ff"} />
+                        <span style={{ backgroundColor: "#ffb822" }}></span>
+                    </a>
                 </li>
                 <li className="nav-list-item text-center position-relative">
-                    <AiOutlineUser size={18} fill={"#0a80ff"} />
+                    <AiOutlineUser size={18}/*  fill={"#0a80ff"} */ />
                     <span style={{ backgroundColor: "#fd397a" }}></span>
                 </li>
                 <li className="nav-list-item text-center position-relative">
-                    <AiOutlineStar size={18} fill={"#0a80ff"} />
+                    <AiOutlineStar size={18}/*  fill={"#0a80ff"} */ />
                 </li>
                 <li className="nav-list-item text-center position-relative archived">
-                    <GoArchive size={18} fill={"#0a80ff"} />
+                    <GoArchive size={18}/*  fill={"#0a80ff"} */ />
                 </li>
                 <li className="nav-list-item text-center position-relative">
                     <BiMoon size={18} />
