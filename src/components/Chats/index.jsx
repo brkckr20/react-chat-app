@@ -23,6 +23,36 @@ const Chats = () => {
                 <div className="sidebar-group-chatitem">
                     <UserMessage username="Burak Çakır" message="Hello!" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar3.jpg" />
                 </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Byrom Guittet" message="I sent you all the files. Good luck with 😃" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar4.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Burak Çakır" message="Hello!" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar3.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Byrom Guittet" message="I sent you all the files. Good luck with 😃" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar4.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Burak Çakır" message="Hello!" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar3.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Byrom Guittet" message="I sent you all the files. Good luck with 😃" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar4.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Burak Çakır" message="Hello!" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar3.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Byrom Guittet" message="I sent you all the files. Good luck with 😃" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar4.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Burak Çakır" message="Hello!" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar3.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Byrom Guittet" message="I sent you all the files. Good luck with 😃" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar4.jpg" />
+                </div>
+                <div className="sidebar-group-chatitem">
+                    <UserMessage username="Burak Çakır" message="Hello!" image="https://slek.laborasyon.com/demos/default/dist/media/img/man_avatar3.jpg" />
+                </div>
             </div>
         </div>
     )

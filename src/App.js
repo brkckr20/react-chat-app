@@ -1,3 +1,4 @@
+import ChatContent from "./components/ChatContent";
 import Navigation from "./components/Navigation";
 import Content from "./pages/Content";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="w-100 vh-100 d-flex">
       <Navigation />
       <Content />
+      <ChatContent />
     </div>
   );
 }
