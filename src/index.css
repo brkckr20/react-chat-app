@@ -1,6 +1,7 @@
 :root {
   --new-message-color: #0a80ff;
   --writing-color: #0ABB87;
+  --yellow-color: #FFB822;
 }
 
 * {
@@ -182,6 +183,11 @@ code {
   color: var(--new-message-color);
 }
 
+#chat-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 #chat-content>div {
   padding: 17px 30px;
@@ -197,4 +203,38 @@ code {
   font-size: 11.2px;
   font-style: italic;
   color: var(--writing-color);
+}
+
+.chat-content-header-actions span {
+  padding: 4px 9px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.chat-content-header-actions span:nth-child(1)>svg {
+  color: var(--writing-color);
+}
+
+.chat-content-header-actions span:nth-child(2)>svg {
+  color: var(--yellow-color);
+}
+
+.btn-group>button {
+  padding: 0 !important;
+  outline: none !important;
+}
+
+.chat-content-header-actions .dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu-right {
+  margin-top: 15px;
+  margin-right: -10px;
+}
+
+.dropdown-menu-right button {
+  font-size: 14px;
 }
