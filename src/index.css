@@ -238,3 +238,13 @@ code {
 .dropdown-menu-right button {
   font-size: 14px;
 }
+
+.mr-16px {
+  margin-right: 16px;
+}
+
+.write-msg-btn {
+  background: #e6e6e6 !important;
+  border-color: #e6e6e6 !important;
+  border-radius: 5px;
+}
