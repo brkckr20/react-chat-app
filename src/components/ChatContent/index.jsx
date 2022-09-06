@@ -3,6 +3,8 @@ import { IoCallOutline } from 'react-icons/io5'
 import { BsCameraVideo } from 'react-icons/bs'
 import { FiMoreHorizontal } from 'react-icons/fi'
 import Picker from 'emoji-picker-react';
+import Messages from '../Messages';
+import { messages } from '../Messages/Message.data'
 
 const ChatContent = () => {
 
@@ -48,7 +50,11 @@ const ChatContent = () => {
                 </div>
             </div>
             <div className="chat-content-messages flex-fill">
-                yazilan mesajların listelendiği alan
+                {
+                    messages.map((msg, i) => (
+                        <Messages message={msg} key={i} />
+                    ))
+                }
             </div>
             <div className="chat-content-input position-relative d-flex align-items-center">
                 <div className='mr-16px'>
@@ -63,10 +69,10 @@ const ChatContent = () => {
                     <input type="text" className='form-control' name="message" placeholder='Write a message' />
                 </div>
                 <div className="message-actions">
-                    <button onClick={() => setEmojiIsVisible(!emojiIsVisible)} style={{ border: "1px solid gray", padding: "4px 10px" }} className="write-msg-btn mr-16px">
+                    <button style={{ border: "1px solid gray", padding: "4px 10px" }} className="write-msg-btn mr-16px">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
                     </button>
-                    <button onClick={() => setEmojiIsVisible(!emojiIsVisible)} style={{ border: "1px solid gray", padding: "4px 10px" }} className="write-msg-btn bg-primary">
+                    <button style={{ border: "1px solid gray", padding: "4px 10px" }} className="write-msg-btn bg-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                     </button>
                 </div>
@@ -76,5 +82,3 @@ const ChatContent = () => {
 }
 
 export default ChatContent
-
-/* FiMoreHorizontal */
