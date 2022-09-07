@@ -112,7 +112,6 @@ code {
   overflow-y: scroll;
   position: relative;
   height: calc(100% - 157px) !important;
-  position: relative;
 }
 
 .sidebar-group-chatlist::-webkit-scrollbar {
@@ -247,4 +246,19 @@ code {
   background: #e6e6e6 !important;
   border-color: #e6e6e6 !important;
   border-radius: 5px;
+}
+
+
+.chat-content-messages {
+  overflow-y: scroll;
+  position: relative;
+}
+
+.chat-content-messages::-webkit-scrollbar {
+  width: 5px;
+  display: block;
+}
+
+.chat-content-messages::-webkit-scrollbar-thumb {
+  background-color: #42424273;
 }
