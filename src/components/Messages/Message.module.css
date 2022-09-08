@@ -12,3 +12,7 @@
     color: gray;
     margin-left: 5px;
 }
+
+.dark_mode_messages_bg {
+    background-color: #293145;
+}

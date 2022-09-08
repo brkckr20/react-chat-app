@@ -4,7 +4,19 @@ import { AiOutlineUser, AiOutlineStar } from 'react-icons/ai'
 import { GoArchive } from 'react-icons/go'
 import { BiMoon } from 'react-icons/bi'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { changeMode } from '../../redux/theme/themeSlice'
+
+
 const Navigation = () => {
+
+    const dispatch = useDispatch();
+    const { darkMode } = useSelector(state => state.theme);
+
+    function changeTheme() {
+        dispatch(changeMode())
+    }
+
     return (
         <nav id='navigation'>
             <ul className="nav-group d-flex flex-column h-100 list-unstyled">
@@ -27,7 +39,7 @@ const Navigation = () => {
                 <li className="nav-list-item text-center position-relative archived">
                     <GoArchive size={18}/*  fill={"#0a80ff"} */ />
                 </li>
-                <li className="nav-list-item text-center position-relative">
+                <li className="nav-list-item text-center position-relative" onClick={changeTheme}>
                     <BiMoon size={18} />
                 </li>
                 <li className="nav-list-item text-center position-relative">

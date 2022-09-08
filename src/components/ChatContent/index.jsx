@@ -5,12 +5,16 @@ import { FiMoreHorizontal } from 'react-icons/fi'
 import Picker from 'emoji-picker-react';
 import Messages from '../Messages';
 import { messages } from '../Messages/Message.data'
+import { useSelector } from 'react-redux'
+
 
 const ChatContent = () => {
+    const { darkMode } = useSelector(state => state.theme)
 
     const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
     const [chosenEmoji, setChosenEmoji] = useState(null);
     const [emojiIsVisible, setEmojiIsVisible] = useState(false);
+
 
     function emojiSelect(e, emoji) {
         setChosenEmoji(emoji);
@@ -66,7 +70,7 @@ const ChatContent = () => {
                     </button>
                 </div>
                 <div className='flex-fill mr-16px'>
-                    <input type="text" className='form-control' name="message" placeholder='Write a message' />
+                    <input type="text" className={`write-msg-input ${darkMode && 'dark-mode-on-input-bg text-white'}`} name="message" placeholder='Write a message' />
                 </div>
                 <div className="message-actions">
                     <button style={{ border: "1px solid gray", padding: "4px 10px" }} className="write-msg-btn mr-16px">

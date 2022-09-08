@@ -1,9 +1,15 @@
 import React from 'react'
+
+import { useSelector } from 'react-redux'
+
 import { FiUsers } from 'react-icons/fi'
 import { AiOutlinePlusCircle } from 'react-icons/ai'
 import UserMessage from '../UserMessage'
 
 const Chats = () => {
+
+    const { darkMode } = useSelector(state => state.theme)
+
     return (
         <div>
             <div className="sidebar-group-header">
@@ -13,8 +19,8 @@ const Chats = () => {
                     <span><AiOutlinePlusCircle /></span>
                 </div>
             </div>
-            <div className="sidebar-group-input poppins">
-                <input type="text" placeholder='Search chats' />
+            <div className={`sidebar-group-input poppins ${darkMode && 'dark-mode-on-input-bg'}`}>
+                <input type="text" className={`${darkMode && 'dark-mode-on-input-bg text-white'}`} placeholder='Search chats' />
             </div>
             <div className="sidebar-group-chatlist">
                 <div className="sidebar-group-chatitem">

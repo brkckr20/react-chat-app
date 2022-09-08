@@ -2,11 +2,22 @@
   --new-message-color: #0a80ff;
   --writing-color: #0ABB87;
   --yellow-color: #FFB822;
+  --dark-mode-bg-color: #1a2236
 }
 
 * {
   font-family: 'Poppins', sans-serif;
 }
+
+.dark-mode-on {
+  background-color: var(--dark-mode-bg-color);
+  color: rgba(255, 255, 255, .75);
+}
+
+.dark-mode-on-input-bg {
+  background-color: var(--dark-mode-bg-color);
+}
+
 
 body {
   margin: 0;
@@ -96,6 +107,16 @@ code {
 .sidebar-group-input {
   padding: 17px 30px;
 }
+
+.write-msg-input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  line-height: 1.5;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+
+}
+
 
 .sidebar-group-input input {
   width: 290px;
