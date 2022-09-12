@@ -40,7 +40,7 @@ const ChatContent = () => {
                     <span onClick={() => setDropdownIsOpen(!dropdownIsOpen)}>
                         <div className={`btn-group ${dropdownIsOpen ? 'show' : ''}`}>
                             <button type="button" className="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <FiMoreHorizontal size={18} />
+                                <FiMoreHorizontal color={darkMode && 'white'.toString()} size={18} />
                             </button>
                             <div className={`dropdown-menu dropdown-menu-right ${dropdownIsOpen ? 'show' : ''}`}>
                                 <button className="dropdown-item" type="button">Profile</button>

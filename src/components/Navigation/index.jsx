@@ -4,14 +4,13 @@ import { AiOutlineUser, AiOutlineStar } from 'react-icons/ai'
 import { GoArchive } from 'react-icons/go'
 import { BiMoon } from 'react-icons/bi'
 
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { changeMode } from '../../redux/theme/themeSlice'
 
 
 const Navigation = () => {
 
     const dispatch = useDispatch();
-    const { darkMode } = useSelector(state => state.theme);
 
     function changeTheme() {
         dispatch(changeMode())

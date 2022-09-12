@@ -41,7 +41,7 @@ code {
 #navigation {
   width: 100px;
   height: 100%;
-  border-right: 1px solid #ebebeb;
+  border-right: 1px solid #42424273;
 }
 
 
@@ -77,7 +77,7 @@ code {
 .sidebar-group>div {
   width: 350px;
   height: 100%;
-  border-right: 1px solid #ebebeb;
+  border-right: 1px solid #42424273;
 }
 
 .sidebar-group-header {
@@ -155,7 +155,7 @@ code {
 }
 
 .sidebar-group-chatitem:not(:first-child) {
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid #42424273;
 }
 
 .user-message-profile-pictures img,
@@ -211,7 +211,7 @@ code {
 
 #chat-content>div {
   padding: 17px 30px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #42424273;
 }
 
 .chat-content-username h3 {
@@ -264,7 +264,7 @@ code {
 }
 
 .write-msg-btn {
-  background: #e6e6e6 !important;
+  background: #e6e6e6;
   border-color: #e6e6e6 !important;
   border-radius: 5px;
 }
