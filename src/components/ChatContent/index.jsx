@@ -36,7 +36,6 @@ const ChatContent = () => {
                 <div className="chat-content-header-actions">
                     <span><IoCallOutline size={18} /></span>
                     <span><BsCameraVideo size={18} /></span>
-                    {/* <span><FiMoreHorizontal size={18} /></span> */}
                     <span onClick={() => setDropdownIsOpen(!dropdownIsOpen)}>
                         <div className={`btn-group ${dropdownIsOpen ? 'show' : ''}`}>
                             <button type="button" className="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">

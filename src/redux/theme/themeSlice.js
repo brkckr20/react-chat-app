@@ -3,12 +3,11 @@ import { createSlice } from '@reduxjs/toolkit'
 export const themeSlice = createSlice({
     name: "theme",
     initialState: {
-        darkMode: localStorage.getItem("chat-color-mode") || false
+        mode: localStorage.getItem("chat-color-mode"),
     },
     reducers: {
         changeMode: (state, action) => {
-            state.darkMode = !state.darkMode
-            localStorage.setItem("chat-color-mode", state.darkMode);
+            localStorage.setItem("chat-color-mode", action.payload);
         }
     },
     extraReducers: {

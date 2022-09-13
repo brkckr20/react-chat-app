@@ -8,7 +8,7 @@ import UserMessage from '../UserMessage'
 
 const Chats = () => {
 
-    const { darkMode } = useSelector(state => state.theme)
+    const { mode } = useSelector(state => state.theme);
 
     return (
         <div>
@@ -19,8 +19,8 @@ const Chats = () => {
                     <span><AiOutlinePlusCircle /></span>
                 </div>
             </div>
-            <div className={`sidebar-group-input poppins ${darkMode && 'dark-mode-on-input-bg'}`}>
-                <input type="text" className={`${darkMode && 'dark-mode-on-input-bg text-white'}`} placeholder='Search chats' />
+            <div className={`sidebar-group-input poppins ${mode === 'dark' ? 'dark-mode-on-input-bg' : ''}`}>
+                <input type="text" className={`${mode === 'dark' ? 'dark-mode-on-input-bg' : ''}`} placeholder='Search chats' />
             </div>
             <div className="sidebar-group-chatlist">
                 <div className="sidebar-group-chatitem">
